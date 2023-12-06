@@ -30,7 +30,7 @@ const Explore = () => {
     }
 
     const shouldShowSearchResults = searchValue !== ''
-    const shouldShowPosts = !shouldShowSearchResults
+    const shouldShowPosts = searchValue === ''
 
     return (
         <div className="explore-container">
